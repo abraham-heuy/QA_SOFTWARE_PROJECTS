@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9e8f7;
+}
+main {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 450px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    background-color:#eef5fb;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.imgholder{
+  height: 35%;
+  justify-content: center;
+  align-items: center;
+
+}
+.google{
+  padding: 50px;
+  height: 100px;
+
+}
+.logos{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  height: 50px;
+}
+.facebook, .twitter{
+  margin-left: 6px;
+  height: 30px;
+}
+.instagram{
+  height: 35px;
+  margin-left: 8px;
+}
+.name{
+  font-size: 30px;
+
+  font-family: "Times New Roman", Times, serif;
+}
+.description{
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.btn button{
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 1px solid #d9d9d9;
+  margin-top: 34px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  font-family: Arial, sans-serif;
+
+}
