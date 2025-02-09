@@ -1,0 +1,19 @@
+{
+  "name": "2.strings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "strings.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon strings.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "nodemon": "^3.1.9"
+  }
+  
+}
