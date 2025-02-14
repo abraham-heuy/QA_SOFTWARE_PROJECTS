@@ -1,0 +1,70 @@
+/* Center the calculator on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c3e50;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator container */
+.container {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+}
+
+/* Header styling */
+.header h3 {
+    color: #fff;
+    margin: 10px 0;
+}
+
+/* Display screen */
+.display {
+    background: #333;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Grid layout for buttons */
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+/* Button styling */
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #444;
+    color: #fff;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Make the "=" button span 3 columns */
+.enter {
+    grid-column: span 3;
+    background: #e67e22;
+}
+
+.enter:hover {
+    background: #d35400;
+}
