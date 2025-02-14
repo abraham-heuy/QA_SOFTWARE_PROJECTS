@@ -80,7 +80,15 @@ const users = [
     user.posts.forEach(post => {
       console.log(` - ${post.content} (${post.likes} likes, ${post.timestamp})`);
     });
-  });
+  }); /*  output:
+  User: John
+ - Great day at Central Park! (15 likes, 2024-05-10T12:00:00)
+User: Alice
+ - Hiking in the Bay Area! (12 likes, 2024-05-12T14:20:00)
+User: David
+ - Deep dish pizza is the best! (18 likes, 2024-05-11T10:30:00)
+User: Sarah
+ - Exploring the Olympic National Park! (11 likes, 2024-05-14T07:00:00) */
   //3.	Calculate Average Likes per User:
   const totalLikes = activeUsers.reduce(
     (sum, user) =>
@@ -93,4 +101,4 @@ const users = [
       ? totalLikes / activeUsers.length
       : 0;
       import chalk from 'chalk';
-  console.log(chalk.yellow(`Average Likes per Active User: ${averageLikesPerUser.toFixed(2)}`));
+  console.log(chalk.yellow(`Average Likes per Active User: ${averageLikesPerUser.toFixed(2)}`));//output: Average Likes per Active User: 14.00
