@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Filter App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="#">Book Inventory</a>
+            <div class="navbar-cart">
+                <a href="#" class="cart-link" id="modal-link">Cart</a>
+<span class="cart-count">0</span>
+
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Items in the cart:</p>
+        <div id="cartItems"></div>
+        <p><strong>Total Price: </strong>Ksh <span id="totalPrice">0.00</span></p>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="filter-container">
+        <label for="genreFilter">Filter by Genre:</label>
+        <select id="genreFilter">
+            <option value="All">All</option>
+        </select>
+    </div>
+    <div class="container">
+        <hr/>
+       
+        <div class="books-container" id="booksByGenre"></div>
+        <hr/>
+    </div>
+   
+    <script src="../dist/index.js"></script>
+</body>
+</html>
