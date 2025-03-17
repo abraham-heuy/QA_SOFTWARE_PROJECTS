@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Posting App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h1>Book Posting App</h1>
+    </nav>
+
+    <!-- MAIN SECTION -->
+    <section class="container">
+        <button id="openAuthModal">Post Book Now</button>
+    </section>
+
+    <!-- MODAL FOR REGISTRATION -->
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register</h2>
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button id="registerBtn">Register</button>
+            <p><a href="#" id="openLoginModal">Already Registered? Login</a></p>
+        </div>
+    </div>
+
+    <!-- MODAL FOR LOGIN -->
+    <div class="modal" id="authModalLogin">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button id="loginBtn">Login</button>
+        </div>
+    </div>
+
+    <!-- MODAL FOR BOOK POSTING -->
+    <div class="modal" id="postBookModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Post Your Book</h2>            
+            <input type="text" id="bookTitle" placeholder="Book Title">
+            <input type="text" id="author" placeholder="Author">
+            <input type="text" id="genre" placeholder="Genre">
+            <input type="number" id="year" placeholder="Year of Publication">
+            <input type="number" id="pages" placeholder="Number of Pages">
+            <input type="text" id="publisher" placeholder="Publisher">
+            <textarea id="description" placeholder="Description"></textarea>
+            <input type="number" id="price" placeholder="Price">
+            
+            <button id="postBookBtn">Post</button>
+        </div>
+    </div>
+
+    <!-- BOOK LISTING SECTION -->
+    <div class="book-list">
+        <h2>Posted Books</h2>
+        <div id="booksContainer"></div>
+    </div>
+
+    <script src="dist/index.js"></script>
+</body>
+</html>

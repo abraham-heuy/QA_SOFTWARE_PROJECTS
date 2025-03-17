@@ -1,0 +1,38 @@
+You're building a basic CRUD (Create, Read, Update, Delete) API for two main entities:
+
+Users
+Events (created by Users)
+✅ Entity-Relationship Diagram (ERD):
+Users
+-----
+id (PK)
+name
+email (unique)
+password
+created_at
+updated_at
+    |
+    | (one-to-many)
+    ↓
+Events
+------
+id (PK)
+user_id (FK)
+title
+location
+date
+price
+created_at
+updated_at
+
+Relationship: A user can create multiple events, and each event belongs to exactly one user.
+
+Pre-Requisites:
+
+PostgreSQL database setup ----postgres download on chrome
+PgAdmin installed ----- comes inside postgres once installed
+Express.js setup (already provided)
+Pool connection (pool object for PostgreSQL) ----
+npm i pg
+npm i --save-dev @types/pg
+
